@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: aqua;
+        }
+        .sidenav{
+            height: 100%;
+             width: 160px;
+             position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                background-color: #111;
+                overflow-x: hidden;
+                padding-top: 20px;
+        }
+        .sidenav a{  
+            padding: 6px 8px 6px 16px;
+            font-size: 25px;
+            display: block;
+            font-weight: bold;
+            text-decoration: none;
+             color: rgb(207, 205, 205);
+            
+        }
+         /*color changes when we mouse over element*/
+         .sidenav a:hover{
+            color:blue;
+         }
+         .main {
+                 /* Same as the width of the sidenav */
+                 margin-left: 160px;
+                font-size:30px; /* Increased text to enable scrolling */
+                padding: 0px 10px;
+               }
+               @media screen and (max-height: 450px) {
+                .sidenav {padding-top: 15px;}
+                .sidenav a {font-size: 18px;}
+                }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SideBar</title>
+    
+</head>
+<body>
+    <!--sidebar navigation-->
+    <div class="sidenav">
+        <a href="#" id="aboutLink">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contacts</a>
+        <a href="#">Customers</a>
+        <a href="#">Settings</a>
+    </div>
+    <div class="main">
+     <h1>MyApp</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, exercitationem aliquam nostrum alias non iste nam laboriosam natus sint vero velit eligendi, assumenda ducimus incidunt fugit eveniet nihil soluta eos.
+    Eum fugiat laudantium, et laborum porro tempore atque accusamus veritatis non repellat illum aperiam accusantium, omnis nihil voluptates maiores architecto ab! Omnis impedit molestias quibusdam enim magnam sit, laudantium asperiores.Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quos adipisci, autem alias cupiditate suscipit eum repellat illum vel dolore impedit et quod nesciunt repellendus perferendis laborum culpa tempora! Sapiente.</p>
+    <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+   <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis labore saepe ea quos, id sed cum commodi quis ut eum accusamus nostrum optio reprehenderit eius repellendus hic. Voluptas, pariatur minima?
+   Aspernatur tempora, similique voluptatum modi ea eius, reprehenderit soluta facere, nesciunt tenetur suscipit quia! Obcaecati accusantium doloremque impedit mollitia quas iure iusto voluptatum adipisci fuga quisquam, alias laudantium numquam magni?</p>
+    </div>
+        <!-- 🧠 JavaScript goes here -->
+    <script>
+        // Example: show a message when clicking "About"
+        document.getElementById('aboutLink').addEventListener('click', function() {
+            alert('You clicked the About link!');
+        });
+    </script>
+
+</body>
+</html>
