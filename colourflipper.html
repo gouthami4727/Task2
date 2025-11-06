@@ -24,11 +24,15 @@
  
 <script>
 function changeColor() {
-  const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
-  document.body.style.backgroundColor = randomColor;
+      const colors = ["red", "green", "blue", "orange", "purple", "pink"];
+      const random = Math.floor(Math.random() * colors.length);
+      document.body.style.backgroundColor = colors[random];
+      document.getElementById("colorName").textContent = "Background Color: " + colors[random];
+    }
 }
 </script>
 </body>
 </html>
  
+
  
